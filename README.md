@@ -21,41 +21,28 @@ fragment segmentation
 CleavageEmbryo Dataset.
 
 ## Install
+The code requires `python>=3.8`, as well as `pytorch>=1.7` and `torchvision>=0.8`.
+Install Segment Anything:
+```
+pip install git+https://github.com/facebookresearch/segment-anything.git
+```
 
 ## QuickStart
-### Inference and Visualization with Pre-trained Models 
-Use `tools/inference.py`
+### Visualization 
 ```
-python tools/inference.py 
-    --annTestFile <path to the test json file> 
-    --imgTestFile <path to the test image file> 
-    --configFile <path to the config file> 
-    --outputDir <path to the output directory>
-    --weightsFile <name of the weights file>
+python visualize.py
 ```
 
 Download [pre-trained model](url)
 ### Evaluation with Pre-trained Models 
-Use `tools/evaluate.py`
 ```
-python tools/evaluate.py 
-    --annTestFile <path to the test json file> 
-    --imgTestFile <path to the test image file> 
-    --configFile <path to the config file> 
-    --outputDir <path to the output directory>
-    --weightsFile <name of the weights file>
+python evaluate.py
 ```
 
 ### Training on your own dataset
-Use `tools/train.py` to train your model.
+modify config.py and then
 ```
-python train.py 
-    --annTrainFile <path to the train json file>
-    --imgTrainFile <path to the train image file>
-    --annValFile <path to the validation json file> 
-    --imgValFile <path to the validation image file> 
-    --configFile <path to the config file> 
-    --outputDir <path to the output directory>
+python train_es.py
 ```
 
 
