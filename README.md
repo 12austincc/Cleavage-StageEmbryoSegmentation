@@ -13,7 +13,7 @@ This is the official pytorch implementation of SAM-Based Dual Branch Pipeline, p
 
 ### Visualization
 ![](https://github.com/12austincc/Cleavage-StageEmbryoSegmentation/blob/main/image/object_detectionv2.png)
-![](https://github.com/12austincc/Cleavage-StageEmbryoSegmentation/blob/main/image/instance.png)
+![](https://github.com/12austincc/Cleavage-StageEmbryoSegmentation/blob/main/image/blastomereSeg.png)
 ### Results
 object detection
 blatomere segmentation
