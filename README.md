@@ -28,14 +28,16 @@ Install Segment Anything:
 ```
 pip install git+https://github.com/facebookresearch/segment-anything.git
 ```
-
+Install requirements:
+```
+pip install -r requirements.txt
+```
 ## QuickStart
 ### Visualization 
+Download [pre-trained model](url)
 ```
 python visualize.py
 ```
-
-Download [pre-trained model](url)
 ### Evaluation with Pre-trained Models 
 ```
 python evaluate.py
