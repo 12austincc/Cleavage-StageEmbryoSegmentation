@@ -6,3 +6,5 @@ medpy
 opencv_python
 segmentation-models-pytorch
 Pillow
+shapely
+scikit-image

@@ -5,8 +5,8 @@ This is the official pytorch implementation of SAM-Based Dual Branch Pipeline, p
 
 ## Introduction
 ### Abstract
-**Motivation:** Embryo selection is one of the critical factors in determining the success of pregnancy in in vitro fertilization (IVF) techniques.Using artificial intelligence to assist in embryo selection could effectively address the current time-consuming, expensive and subjectively influenced process of embryo assessment by trained embryologists. However, current deep learning-based methods often concentrate on the segmentation or grading of blastocysts which neglects morphokinetic parameters or predicting cell development via time-lapse videos ,thus lacking interpretability. Given the importance of morphokinetic and morphological evaluation of cleavage-stage embryos in predicting implantation potential, as highlighted by some prior research, there is a need for an automated method to segment cleavage-stage embryos to enhance this process.
-**Results:** In this study, we present the SAM-based Dual Branch Segmentation Pipeline for automated segmentation of blastomeres in cleavage-stage embryos. With the powerful segmentation capability of SAM, the instance branch performs instance segmentation of blastomeres and the semantic branch performs semantic segmentation of fragments. Due to the lack of publicly available datasets, we constructed the CleavageEmbryo dataset, which is the first dataset of human cleavage-stage embryos with pixel-level annotations containing fragment information. We trained and tested a series of SOTA segmentation algorithms on CleavageEmbryo, and our experiments show that our method outperforms existing algorithms in terms of objective metrics and visual quality, enabling more accurate segmentation of cleavage-stage embryos.
+**Motivation:** Embryo selection is one of the critical factors in determining the success of pregnancy in in vitro fertilization (IVF) techniques. Using artificial intelligence to aid in embryo selection could effectively address the current time-consuming, expensive and subjectively influenced process of embryo assessment by trained embryologists. However, current deep learning-based methods often focus on the segmentation or grading of blastocysts,  neglecting morphokinetic parameters or predicting cell development via time-lapse videos, thus lacking interpretability. Given the significance of morphokinetic and morphological evaluation of cleavage-stage embryos in predicting implantation potential, as emphasized by previous research, there is a necessity for an automated method to segment cleavage-stage embryos to improve this process.
+**Results:** In this article, we introduce the SAM-based Dual Branch Segmentation Pipeline for automated segmentation of blastomeres in cleavage-stage embryos. Leveraging the powerful segmentation capability of SAM, the instance branch conducts instance segmentation of blastomeres, while the semantic branch performs semantic segmentation of fragments. Due to the lack of publicly available datasets, we constructed the CleavageEmbryo dataset, the first dataset of human cleavage-stage embryos with pixel-level annotations containing fragment information. We train and test a series of state-of-the-art segmentation algorithms on CleavageEmbryo. Our experiments demonstrate that our method outperforms existing algorithms in terms of objective metrics (mAP 0.748 on blastomere, Dice 0.694 on fragment) and visual quality, enabling more accurate segmentation of cleavage-stage embryos.
 ![](https://github.com/12austincc/Cleavage-StageEmbryoSegmentation/blob/main/image/overall.png)
 ![](https://github.com/12austincc/Cleavage-StageEmbryoSegmentation/blob/main/image/semantic.png)
 ![](https://github.com/12austincc/Cleavage-StageEmbryoSegmentation/blob/main/image/instance.png)
@@ -33,10 +33,11 @@ Install requirements:
 pip install -r requirements.txt
 ```
 ## QuickStart
-### Visualization 
-Download [pre-trained model](url)
+### Inference test images
+Download [pre-trained model](https://whueducn-my.sharepoint.com/:u:/g/personal/2020302111430_whu_edu_cn/EUu7pU7KIw5OuXh_AyOtexYB2WPPRNpH3F5qbTgnR1BAzw?e=xxfFiY) and [pre-trained yolo](https://whueducn-my.sharepoint.com/:u:/g/personal/2020302111430_whu_edu_cn/ETxIEO-CFKxPsNjH4348EmQBpmu5zaav-kAuBTdxhF9HLA?e=1pFp8n)
+and put them into ./checkpoint
 ```
-python visualize.py
+python inference.py
 ```
 ### Evaluation with Pre-trained Models 
 ```
@@ -44,6 +45,7 @@ python evaluate.py
 ```
 
 ### Training on your own dataset
+download [sam](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth)
 modify config.py and then
 ```
 python train_es.py

@@ -8,10 +8,8 @@ config = {
     "num_classes": 2,
     "patience": 20,
     "eval_interval": 1,
-    # "validate_cls": True,
-    # "pretrained": True,
     "pretrained": False,
-    "out_dir": "./out/training4",
+    "out_dir": "./out/training",
     "visualize_dir": "sam_dual",
     "opt": {
         "learning_rate": 3e-4,
@@ -28,12 +26,12 @@ config = {
         # "checkpoint": "../../sam_vit_l_0b3195.pth",  # 6513Mib
         # "checkpoint": "../../sam_vit_b_01ec64.pth",  # 5319Mib
         "checkpoint": "./checkpoint/sam_vit_b.pth",
-        "dual_checkpoint": "./out/training3/sam.pth",
+        "dual_checkpoint": "./checkpoint/sam_dual.pth",
         "freeze": {
             "sem_decoder": False,
             "image_encoder": False,
             "prompt_encoder": True,
-            "mask_decoder": True,
+            "mask_decoder": False,
         },
     },
 
