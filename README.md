@@ -20,7 +20,7 @@ object detection
 
 |                        |      Blastomere       |                    |                      |                 |      Fragment       |                  |                    |               |
 | ---------------------- | :-------------------: | ------------------ | -------------------- | --------------- | :-----------------: | ---------------- | ------------------ | ------------- |
-| Methods                |  Precision$\uparrow$  | Recall$\uparrow$   | F1-Score$\uparrow$   | mAP$\uparrow$   | Precision$\uparrow$ | Recall$\uparrow$ | F1-Score$\uparrow$ | mAP$\uparrow$ |
+| Methods                |  Precision  | Recall   | F1-Score   | mAP   | Precision | Recall | F1-Score | mAP |
 | FCOS                   |         0.534         | 0.554              | 0.552                | 0.680           |        0.158        | 0.213            | 0.180              | 0.138         |
 | YOLOX                  |         0.576         | 0.587              | 0.643                | 0.755           |        0.208        | 0.266            | 0.214              | 0.227         |
 | DETR                   |         0.594         | 0.612              | 0.667                | 0.772           |        0.160        | 0.190            | 0.250              | 0.152         |
@@ -32,7 +32,7 @@ blatomere segmentation
 
 |                        |      Blastomere       |                    |                      |                 |                     
 | --------------------   | :-------------------: | ------------------ | -------------------- | --------------- |                 
-| Methods                |  Precision$\uparrow$  | Recall$\uparrow$   | F1-Score$\uparrow$   | mAP$\uparrow$   |                  
+| Methods                |  Precision            | Recall  | F1-Score  | mAP  |                  
 | Cascade MaskRCNN       |         0.571         | 0.579              | 0.657                | 0.747           |                   
 | Mask Scoring RCNN      |         0.549         | 0.560              | 0.635                | 0.714           |                  
 | YOLACT                 |         0.468         | 0.493              | 0.571                | 0.587           | 
@@ -47,7 +47,7 @@ fragment segmentation
 
 |                        |      Blastomere       |                    |                      |                 |
 | --------------------   | :-------------------: | ------------------ | -------------------- | --------------- | 
-| Methods                |  Precision$\uparrow$  | Recall$\uparrow$   | F1-Score$\uparrow$   | mAP$\uparrow$   | 
+| Methods                |  Precision  | Recall   | F1-Score   | mAP  | 
 | Cascade MaskRCNN       |         0.571         | 0.579              | 0.657                | 0.747           |
 | Mask Scoring RCNN      |         0.549         | 0.560              | 0.635                | 0.714           |
 | YOLACT                 |         0.468         | 0.493              | 0.571                | 0.587           |
