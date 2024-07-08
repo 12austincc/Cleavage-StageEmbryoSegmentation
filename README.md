@@ -24,9 +24,14 @@ CleavageEmbryo Dataset.
 ![](https://github.com/12austincc/Cleavage-StageEmbryoSegmentation/blob/main/image/DatasetDescrip.png)
 ## Install
 The code requires `python>=3.8`, as well as `pytorch>=1.7` and `torchvision>=0.8`.
+
 Install Segment Anything:
 ```
 pip install git+https://github.com/facebookresearch/segment-anything.git
+```
+Install YOLOv8：
+```
+pip install ultralytics
 ```
 Install requirements:
 ```
