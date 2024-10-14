@@ -23,7 +23,7 @@ Install requirements:
 pip install -r requirements.txt
 ```
 ## QuickStart
-pretrained [sam_dual]([https://whueducn-my.sharepoint.com/:u:/g/personal/2020302111430_whu_edu_cn/EdWbhvthCnhEkvgOuMUXQB8BPD62EplRApnq9qW0jjXdNA?e=yWne5S](https://whueducn-my.sharepoint.com/:u:/g/personal/2020302111430_whu_edu_cn/EVTIsyp3PAlImW-ggLkmS80BA9sBzq6QrKaCWrsi6SCHEw?e=qihhbx))
+pretrained [sam_dual](https://whueducn-my.sharepoint.com/:u:/g/personal/2020302111430_whu_edu_cn/EVTIsyp3PAlImW-ggLkmS80BA9sBzq6QrKaCWrsi6SCHEw?e=qihhbx)
 ### Inference test images
 ```
 python inference.py
