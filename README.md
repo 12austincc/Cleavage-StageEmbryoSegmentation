@@ -17,7 +17,7 @@ pip install -r requirements.txt
 ```
 ## QuickStart
 [sam_dual](https://whueducn-my.sharepoint.com/:u:/g/personal/2020302111430_whu_edu_cn/EVPYa9MhqG5FjPuOsNRNvY4Bepec4ZXdjKpZtum0Gq0uaQ?e=Rk1JNl)
-[yolo]([https://whueducn-my.sharepoint.com/:u:/g/personal/2020302111430_whu_edu_cn/EUaMh7yAWKpHubH-QNWtJfwBh3f7mvYfM-bVk1o7fYtfRw?e=dVINhh](https://whueducn-my.sharepoint.com/:u:/g/personal/2020302111430_whu_edu_cn/EUaMh7yAWKpHubH-QNWtJfwBnaHTimkIHyaRYS5-Z2sYuA?e=ngwvjX))
+[yolo](https://whueducn-my.sharepoint.com/:u:/g/personal/2020302111430_whu_edu_cn/EUaMh7yAWKpHubH-QNWtJfwBnaHTimkIHyaRYS5-Z2sYuA?e=ngwvjX)
 ### Inference test images
 ```
 python inference.py
